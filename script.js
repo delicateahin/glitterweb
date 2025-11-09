@@ -5,15 +5,15 @@ const data = {
     logo: "assets/logo-bloe.png",
     img: "assets/photo_bloe.png",
     story: "no hay información",
-    origin: "desconocido",
-    parents: "—",
-    birth: "—",
-    sign: "—",
-    mbti: "—",
+    origin: "Jardines celestiales de Liria +",
+    parents: "Seraphiel ( Ángel de la música ) y Cupidara ( Diosa del amor )",
+    birth: "17 Noviembre 2005 +",
+    sign: "Escorpio",
+    mbti: "ENFJ",
     color: "—",
     power: "—",
-    emoji: "•",
-    dream: "—"
+    emoji: "💌",
+    dream: "Poder crear un mundo donde ningún corazón sufra por amor perdido o roto, donde cada alma recuerde cómo amar sin miedo, sin dolor y sin olvido. Un mundo 0 toxico."
   },
   star: {
     name: "Star Driscoll",
@@ -140,3 +140,4 @@ document.querySelectorAll('.menu-btn').forEach(btn=>{
 
 // Inicializar con Blœven
 setCharacter('bloe');
+
