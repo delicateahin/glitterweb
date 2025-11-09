@@ -1,7 +1,7 @@
 // Datos de personajes
 const data = {
   bloe: {
-    name: "Blœven",
+    name: "Blœ:ven",
     logo: "assets/logo-bloe.png",
     img: "assets/photo_bloe.png",
     story: "no hay información",
@@ -140,4 +140,5 @@ document.querySelectorAll('.menu-btn').forEach(btn=>{
 
 // Inicializar con Blœven
 setCharacter('bloe');
+
 
