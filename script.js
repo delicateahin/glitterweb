@@ -66,7 +66,7 @@ según quién mire su brillo.`,
     dream: "Aprender a vivir cada día como si fuera único."
   },
   member4: {
-    name: "Member 4",
+    name: "Bonnie",
     logo: "assets/logo-m4.png",
     img: "assets/photo_member4.png",
     story: "no hay información",
@@ -81,7 +81,7 @@ según quién mire su brillo.`,
     dream: "—"
   },
   member5: {
-    name: "Member 5",
+    name: "Daphne",
     logo: "assets/logo-m5.png",
     img: "assets/photo_member5.png",
     story: "no hay información",
@@ -140,5 +140,6 @@ document.querySelectorAll('.menu-btn').forEach(btn=>{
 
 // Inicializar con Blœven
 setCharacter('bloe');
+
 
 
