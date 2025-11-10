@@ -66,34 +66,41 @@ según quién mire su brillo.`,
     dream: "Aprender a vivir cada día como si fuera único."
   },
   member4: {
-    name: "Bonnie",
+    name: "Adelyn Sylara",
     logo: "assets/logo-m4.png",
     img: "assets/photo_member4.png",
-    story: "no hay información",
+    story: `Hija de Nymphaea, la ninfa de las flores silvestres, y de Faunor, guardián del bosque, Adelyn nació en un claro donde los lirios nunca dejaban de florecer. Dicen que su primer llanto hizo brotar una lluvia tibia que despertó a las semillas dormidas. Desde entonces, la vida crece allí donde sus pasos tocan la tierra.
+Aunque el bosque era su hogar, Adelyn siempre sintió que el mundo más allá necesitaba su voz. Los humanos habían olvidado escuchar al viento, mirar las flores o agradecerle al agua. Y ella, con su magia —Florascencia Vitalis y Faunae Vox—, soñaba con recordarles lo que significa cuidar, no solo vivir.
+Una noche, cuando las luciérnagas encendieron el cielo, tomó la decisión de dejar su bosque atrás. No fue por rebeldía, sino por amor. Quería aprender cómo florece la vida fuera de la tierra que la vio nacer.
+Ahora, en un mundo que apenas empieza a comprender, Adelyn camina entre humanos y criaturas, llevando en sus manos la promesa de un nuevo comienzo.
+`,
     origin: "desconocido",
-    parents: "—",
-    birth: "—",
-    sign: "—",
-    mbti: "—",
-    color: "—",
-    power: "—",
-    emoji: "•",
-    dream: "—"
+    parents: "Nymphaea (ninfa de las flores) & Faunor (espíritu guardián de los animales)",
+    birth: "25 abril 1705",
+    sign: "Tauro",
+    mbti: "INFP",
+    color: "Verde pastel / rosado",
+    power: "Florascencia Vitalis (energía de la naturaleza que cura y florece) y Faunae Vox (voz de la fauna que comunica y guía a los animales silvestres)",
+    emoji: "🌷",
+    dream: "Hacer florecer la bondad en los corazones de las otras personas, como si fueran parte del mismo bosque"
   },
   member5: {
-    name: "Daphne",
+    name: "Skiá Skotiá",
     logo: "assets/logo-m5.png",
     img: "assets/photo_member5.png",
-    story: "no hay información",
+    story: `Nacida en los jardines sombríos del Tártaro, Skiá es el equilibrio entre la oscuridad y la vida que brota de ella. Hija de Hades, señor de los muertos, y de Minthe, la ninfa convertida en planta de menta, su existencia es un secreto que pocos en el Olimpo recuerdan.
+Desde pequeña, aprendió a moverse entre las almas perdidas, escuchando sus historias y ofreciéndoles consuelo. Su poder le permite dar forma a las sombras y extraer memorias del olvido, aunque cada recuerdo que rescata deja un lunar en su piel.
+En la superficie, camina entre los mortales bajo identidades distintas, fascinada por su fugaz brillo. Aunque su presencia provoca escalofríos, su esencia no es maligna, solo busca demostrar que incluso en la oscuridad, puede florecer algo puro.
+`,
     origin: "desconocido",
-    parents: "—",
-    birth: "—",
-    sign: "—",
-    mbti: "—",
-    color: "—",
-    power: "—",
-    emoji: "•",
-    dream: "—"
+    parents: "Hades (Dios del Inframundo) & Minthe (Ninfa del río Cocito)",
+    birth: "26 de noviembre de 3500 a. C.",
+    sign: "Sagitario",
+    mbti: "INFP",
+    color: "negro / verde esmeralda",
+    power: "Nékrōs Anásis (control de sombras y resurrección). Minthe’s Whisper (fragancia que calma o envenena según la emoción).",
+    emoji: "🪞",
+    dream: "Recordar lo que el olvido intenta borrar"
   }
 };
 
@@ -140,6 +147,7 @@ document.querySelectorAll('.menu-btn').forEach(btn=>{
 
 // Inicializar con Blœven
 setCharacter('bloe');
+
 
 
 
