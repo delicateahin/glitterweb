@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>glitt*er — Ficha</title>
+  <title>las lagrimitas</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="assets/favicon.png" type="image/png">
@@ -16,88 +16,192 @@
 
   <!-- Topbar -->
   <div class="topbar">
-<div class="brand">
-  <img id="brand-logo" src="assets/logo-bloe.png" alt="glitterweb logo">
-</div>
+    <div class="brand">
+      <img id="brand-logo" src="assets/logo-main.png" alt="glitterweb logo" style="cursor:pointer;">
+    </div>
 
     <div class="menu">
-      <button class="menu-btn" data-character="bloe">Blœven</button>
+      <button class="menu-btn active" data-character="about">About Us</button>
+      <button class="menu-btn" data-character="bloe">Blœ:ven</button>
       <button class="menu-btn" data-character="star">Star</button>
       <button class="menu-btn" data-character="lum">Luminae</button>
-      <button class="menu-btn" data-character="member4">Adelyn</button>
-      <button class="menu-btn" data-character="member5">Skiá</button>
+      <button class="menu-btn" data-character="adelyn">Adelyn</button>
+      <button class="menu-btn" data-character="skia">Skiá</button>
+      <button class="menu-btn" data-character="destiny">Destiny</button>
     </div>
   </div>
 
-<!-- Contenedor principal ficha -->
-<div class="container">
-  <div class="profile">
-    <!-- Left: imagen -->
-    <div class="left">
-      <div class="image-stack">
-        <img id="char-image" src="" alt="Foto de la chica">
+  <!-- Contenedor principal ficha -->
+  <div class="container">
+    
+    <!-- About Us Section -->
+    <div class="about-section" style="display:block;">
+      <div class="about-container">
+        <!-- Header -->
+        <div class="about-header">
+          <h1>glitt*er</h1>
+          <p class="about-username">@glitterinourtears</p>
+          <p class="about-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <!-- Music Section -->
+        <div class="about-music">
+          <h3>Música</h3>
+          <div class="music-list">
+            <div class="music-item">
+              <span class="music-type">Pre-Debut</span>
+              <span class="music-title">'Little Monster'</span>
+            </div>
+            <div class="music-item">
+              <span class="music-type">Debut</span>
+              <span class="music-title">'Reality Hurts'</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Friends Section -->
+        <div class="about-friends">
+          <h3>Friends</h3>
+          <div class="friends-grid">
+            <div class="friend-card">
+              <img src="assets/friend_bloe.png" alt="Blœ:ven">
+              <p>Blœ:ven</p>
+            </div>
+            <div class="friend-card">
+              <img src="assets/friend_star.png" alt="Star">
+              <p>Star</p>
+            </div>
+            <div class="friend-card">
+              <img src="assets/friend_lum.png" alt="Luminae">
+              <p>Luminae</p>
+            </div>
+            <div class="friend-card">
+              <img src="assets/friend_adelyn.png" alt="Adelyn">
+              <p>Adelyn</p>
+            </div>
+            <div class="friend-card">
+              <img src="assets/friend_skia.png" alt="Skiá">
+              <p>Skiá</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- Right: ficha -->
-    <div class="right">
-      <div class="card ficha">
-        <h2 id="char-name"></h2>
+    <!-- Destiny Section -->
+    <div class="destiny-section" style="display:none;">
+      <div class="destiny-content">
+        <div class="destiny-story">
+          <h2>Destiny</h2>
+          <p id="destiny-story"></p>
+        </div>
+        <div class="destiny-images">
+          <div id="destiny-gallery">
+            <!-- Las imágenes se cargan dinámicamente -->
+          </div>
+        </div>
+      </div>
+    </div>
 
-        <!-- Meta con fondo blanquito -->
-        <div class="meta">
-          <div><strong>Origen:</strong> <span id="char-origin"></span></div>
-          <div><strong>Padres:</strong> <span id="char-parents"></span></div>
+    <!-- Now Playing -->
+    <div class="now-playing">
+      <p id="now-playing-text"></p>
+    </div>
+
+    <div class="profile">
+      <!-- Left: imagen -->
+      <div class="left">
+        <div class="image-stack">
+          <div id="char-gallery" class="gallery">
+            <!-- Las imágenes se cargan dinámicamente -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: ficha -->
+      <div class="right">
+        <div class="card ficha">
+          <h2 id="char-name"></h2>
+          <p class="username" id="char-username"></p>
+
+          <!-- Meta con fondo blanquito -->
+          <div class="meta">
+            <div><strong>Origen:</strong> <span id="char-origin"></span></div>
+            <div><strong>Padres:</strong> <span id="char-parents"></span></div>
+          </div>
+
+          <!-- Info-list organizada correctamente -->
+          <div class="info-list">
+            <div class="row">
+              <dt>F. nacimiento:</dt>
+              <dd id="char-birth"></dd>
+            </div>
+            <div class="row">
+              <dt>Edad:</dt>
+              <dd id="char-age"></dd>
+            </div>
+            <div class="row">
+              <dt>Signo:</dt>
+              <dd id="char-sign"></dd>
+            </div>
+            <div class="row">
+              <dt>MBTI:</dt>
+              <dd id="char-mbti"></dd>
+            </div>
+            <div class="row">
+              <dt>Sueño:</dt>
+              <dd id="char-dream"></dd>
+            </div>
+          </div>
         </div>
 
-        <!-- Info-list organizada correctamente -->
-        <div class="info-list">
-          <div class="row">
-            <dt>F. nacimiento:</dt>
-            <dd id="char-birth"></dd>
+        <!-- Mini boxes para gustos -->
+        <div class="mini-boxes">
+          <div class="mini-box">
+            <dt>Animal:</dt>
+            <dd id="char-animal"></dd>
           </div>
-          <div class="row">
-            <dt>Signo:</dt>
-            <dd id="char-sign"></dd>
+          <div class="mini-box">
+            <dt>Can't live without:</dt>
+            <dd id="char-cant-live"></dd>
           </div>
-          <div class="row">
-            <dt>MBTI:</dt>
-            <dd id="char-mbti"></dd>
+          <div class="mini-box">
+            <dt>Food:</dt>
+            <dd id="char-food"></dd>
           </div>
-          <div class="row">
-            <dt>Color:</dt>
-            <dd id="char-color"></dd>
+          <div class="mini-box">
+            <dt>Place:</dt>
+            <dd id="char-place"></dd>
           </div>
-          <div class="row">
-            <dt>Poder:</dt>
-            <dd id="char-power"></dd>
+          <div class="mini-box">
+            <dt>Hobbie:</dt>
+            <dd id="char-hobbie"></dd>
           </div>
-          <div class="row">
+          <div class="mini-box">
             <dt>Emoji:</dt>
             <dd id="char-emoji"></dd>
           </div>
-          <div class="row">
-            <dt>Sueño:</dt>
-            <dd id="char-dream"></dd>
-          </div>
         </div>
-
+        </div>
       </div>
     </div>
-  </div>
-</div>
-
-
 
     <!-- Historia -->
     <div class="story">
       <h3>Historia</h3>
-      <p id="char-story"></p>
+      <div id="char-story"></div>
+      <div class="powers" id="char-powers"></div>
     </div>
+
+    <!-- Quote al final -->
+    <div class="quote-section">
+      <p id="char-quote"></p>
+    </div>
+
+    <!-- Espaciador invisible -->
+    <div style="height: 120px;"></div>
   </div>
 
   <script src="script.js"></script>
 </body>
 </html>
-
-
